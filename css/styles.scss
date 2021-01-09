@@ -1,0 +1,166 @@
+$color-primary: #aa7474;
+$color-secondary: #f2c27a;
+$color-pale: #cec8ff;
+$color-mid: #901cad;
+$color-dark: #60106b;
+$color-black-transparent: rgba(0, 0, 0, 0.5);
+
+$body-font: "Raleway", sans-serif;
+$header-font: "Raleway", sans-serif;
+
+body {
+  font-family: $body-font;
+}
+
+h1,
+h2,
+h3 {
+  font-family: $header-font;
+  color: black;
+}
+
+header h2 {
+  color: $color-pale;
+}
+p {
+  font-size: 1.4rem;
+}
+
+.jumbotron {
+  margin: 0;
+  padding: 30px;
+  background-image: linear-gradient($color-pale);
+  color: white;
+}
+
+.row-content {
+  padding: 50px 0;
+  border-bottom: 1px ridge;
+  min-height: 200px;
+}
+
+.navbar-dark {
+  background-color: $color-primary;
+}
+
+a,
+a:hover {
+  color: black;
+  text-decoration: none;
+}
+
+.carousel-caption {
+  background-color: $color-black-transparent;
+}
+
+.carousel {
+  border: solid $color-secondary;
+}
+.carousel h3 {
+  color: white;
+}
+
+#carouselButton {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 100;
+}
+
+#reserveModal .modal-header {
+  background-color: #17a2b8;
+  color: white;
+}
+
+#loginModal .modal-header {
+  background-color: $color-secondary;
+  color: white;
+}
+
+#brodyMoms {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  opacity: 75%;
+  height: 350px;
+}
+
+footer {
+  overflow: hidden;
+  margin-top: 250px;
+  background-image: linear-gradient($color-primary, white);
+  margin-bottom: 0;
+  padding-bottom: 0;
+  color: black;
+}
+
+#aboutMoms {
+  opacity: 85%;
+}
+
+.get_in_touch {
+  max-width: 800px;
+  margin: 50px auto;
+  position: relative;
+  box-shadow: 0 10px 30px 0px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+}
+.get_in_touch .title {
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 3px;
+  font-size: 3em;
+  line-height: 48px;
+  padding-bottom: 20px;
+  color: black;
+  background: linear-gradient(to right, #aa7474 0%, #e21425 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.contact-form .form-field {
+  position: relative;
+  margin: 32px 0;
+}
+.contact-form .input-text {
+  display: block;
+  width: 100%;
+  height: 36px;
+  border-width: 0 0 2px 0;
+  border-color: #aa7474;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 400;
+}
+.contact-form .input-text:focus + .label,
+.contact-form .input-text.not.empty + .label {
+  transform: translateY(-24px);
+}
+.contact-form .input-text:focus {
+  outline: none;
+}
+
+.contact-form .label {
+  position: absolute;
+  left: 20px;
+  bottom: 11px;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 400;
+  color: black;
+  cursor: text;
+  text-transform: capitalize;
+  transition: transform 0.2s ease-in-out;
+}
+
+.contact-form .submit-btn {
+  display: inline-block;
+  background-image: linear-gradient(125deg, #a72879, #d45129);
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 16px;
+  padding: 8px 16px;
+  border: none;
+  width: 200px;
+  cursor: pointer;
+}
